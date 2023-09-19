@@ -123,6 +123,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &324638874 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7228072845595340913, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
+  m_PrefabInstance: {fileID: 2947911836072274325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &324638877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324638874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9299da5051741684f924c0e6ce918423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 0}
+  speed: 10
+  leftAndRightEdge: 20
+  chanceToChangeDirection: 0
+  secondsBetweenAppleDrop: 0
 --- !u!1 &684966268
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,8 +205,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -209,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 684966268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -317,6 +339,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5739108908067344472, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739108908067344472, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7228072845595340913, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -327,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7269845877057650182, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7269845877057650182, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -364,7 +394,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7228072845595340913, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 324638877}
   m_SourcePrefab: {fileID: 100100000, guid: 8f8209aadac003341b1e7204fa2759dc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
