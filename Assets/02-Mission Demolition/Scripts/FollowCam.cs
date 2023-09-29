@@ -18,16 +18,16 @@ public class FollowCam : MonoBehaviour
     }
 
     void FixedUpdate(){
-        // if (POI == null) return;
-        // Vector3 destination = POI.transform.position;
-        Vector3 destination;
+        if (POI == null) return;
+        Vector3 destination = POI.transform.position;
         if (POI == null){
             destination = Vector3.zero;
         }
         else{
             destination = POI.transform.position;
         }
-        if (POI.tag == "Projectile"){
+        if (POI.CompareTag("Projectile"))
+        {
             if (POI.GetComponent<Rigidbody>().IsSleeping()){
                 POI = null;
                 return;
