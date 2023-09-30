@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -632,7 +632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -90, y: -10}
+  m_AnchoredPosition: {x: 0, y: -10}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &507600344
@@ -678,7 +678,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 507600345}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 792234111}
+        m_TargetAssemblyTypeName: MissionDemolition, Assembly-CSharp
+        m_MethodName: SwitchView
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &507600345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,7 +884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numClouds: 40
   cloudPrefab: {fileID: 2963454955503122721, guid: 4993f7d6c6c1f4d5b8883f39c4462803, type: 3}
-  cloudPosMin: {x: -50, y: -5, z: 10}
+  cloudPosMin: {x: -25, y: -5, z: 10}
   cloudPosMax: {x: 150, y: 100, z: 10}
   cloudScaleMin: 1
   cloudScaleMax: 3
@@ -889,12 +901,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f67752d9bd04a01bf7c352518f81e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uitLevel: {fileID: 0}
-  uitShots: {fileID: 0}
-  uitButton: {fileID: 0}
-  castlePos: {x: 0, y: 0, z: 0}
-  castles: []
+  uitLevel: {fileID: 290899193}
+  uitShots: {fileID: 179150150}
+  uitButton: {fileID: 1140537708}
+  castlePos: {x: 25, y: -9.5, z: 0}
+  castles:
+  - {fileID: 8882785524111859487, guid: 71db0c742cb0e426294e3e9c764fd68c, type: 3}
+  - {fileID: 8882785524111859487, guid: ffa55d9889abb448185c41c71647706b, type: 3}
   level: 0
+  levelMax: 0
+  shotsTaken: 0
+  castle: {fileID: 0}
+  mode: 0
+  showing: Show Slingshot
 --- !u!1 &1140537706
 GameObject:
   m_ObjectHideFlags: 0
