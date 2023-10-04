@@ -6,4 +6,6 @@ accomplish this task and also, it be an enjoyable experience overall.
 Story:
 
 You are one of four mice that has taken up refuge in a suburban home. Winter has been hard and you have had to scrounge up food whenever
-you can. You have to search the house to hopefully find enough cheese that will hold your kids over for a little while longer. 
+you can. You have to search the house to hopefully find enough cheese that will hold you and your friends over for a little while longer. 
+
+Good Luck!
